@@ -1,16 +1,24 @@
-AdventureWorks Sales Analysis Using SQL
-Author: Simranjit Kaur
-Tools Used: SQLite Studio, SQL
+# AdventureWorks Sales Analysis Using SQL
 
+**Author:** Simranjit Kaur  
+**Tools:** SQL, SQLite Studio
 
-Project Overview:
-This project is a comprehensive SQL-based analysis of the AdventureWorks database. It involved answering various business questions using SQL queries focused on products, salespeople, performance metrics, currency conversion, and commission analysis.
+## Project Overview
+This project analyzes the AdventureWorks database using SQL to explore product performance, salesperson productivity, and sales trends.
 
+## Business Questions
+1. Which products have the highest customer ratings?
+2. Which products sell the most units?
+3. Which salespeople generate the highest revenue in 2014?
+4. Is there a relationship between commission percentage and sales performance?
+5. How do currencies affect sales reporting?
 
 Key Exercises & Queries:
 Exercise 1 – Top Products by Average Review
 •	Joined product and productreview.
 •	Calculated average rating and number of reviews per product.
+
+```sql
 SELECT
     p.productid,
     p.NAME,
@@ -288,3 +296,4 @@ JOIN
 ORDER BY 
     ss.tocurrencycode ASC,
     ss.ordertotalsum DESC;
+```
