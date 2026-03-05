@@ -297,3 +297,22 @@ ORDER BY
     ss.tocurrencycode ASC,
     ss.ordertotalsum DESC;
 ```
+
+
+## Key Insights
+
+After analyzing the AdventureWorks dataset, several patterns were observed:
+
+- A small group of salespeople generate a large portion of total revenue, indicating uneven sales distribution.
+- Product review ratings help highlight high-quality products but do not always guarantee higher sales volume.
+- Calculating sales directly from transaction-level data provides a more accurate representation of salesperson performance compared to relying only on summary metrics like SalesYTD.
+- Currency differences across orders highlight the need for normalization when analyzing global sales performance.
+
+## Skills Demonstrated
+
+- SQL Joins
+- Aggregations and Group By
+- Common Table Expressions (CTEs)
+- Business KPI analysis
+- Sales performance analysis
+- Data transformation for reporting
